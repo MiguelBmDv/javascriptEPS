@@ -9,12 +9,19 @@
     --font-title: 45px;
     --font-style: 'Rozha One', serif;
 }
-  body { 
+  body {  
     margin: 0;
     font-family: 'Arial', sans-serif;
   }
+
+  .decoration{
+    position: absolute;
+    opacity: 15%;
+    z-index: -100;
+    max-width: 100%;
+    min-height: 170vh;
+  }
   header {
-    
     background-color: var(--blanco);
     color: var(--blanco);
     padding: 10px 0;
@@ -28,6 +35,7 @@
     font-size:var(--font-title);
     color:var(--azul-claro);
     margin-left: 5px;
+    margin-top: -3px;
     font-family: var(--font-style);
   }
   span{
@@ -47,6 +55,18 @@
     justify-content: end;
     align-items: center;
     
+  }
+  .miniL{
+    width: 6%;
+    position: absolute;
+    top: 2px;
+    left: 30px;
+  }
+  .signOut{
+    background-color: var(--azul-oscuro);
+    margin-top: -15px;
+    padding: 20px 15px 15px 15px;
+    border-radius: 0px 0px 23px 23px;
   }
   nav ul {
     padding-top: 15px;
@@ -82,16 +102,11 @@
     border: 1px solid var(--negro);
     border-radius: 0px 0px 25px 25px;
   }
-  .separador{
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-  }
   .anuncio{
     display: flex-block;
     width: 100%;
     position: relative;
+    text-align: center;
   }
   .anuncio h2 {
     position: absolute;
@@ -162,6 +177,7 @@
     width: 240px;
     height: 320px;
     text-align: center;
+    cursor: pointer;
   }
   
   .item h3{
@@ -218,3 +234,194 @@
   a:hover{
     color: var(--negro) !important;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+ /* ESTILOS EXLUSIVOS DE LA PAGINA DE PLANES*/
+ .plan{
+  border: 1px solid #092c00;
+  padding: 5px;
+  border-radius: 8px;
+  width: 270px;
+  height: 640px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plan h3{
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.plan img {
+  max-width: 60%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.plan:hover{
+  transform: scale(1.0012); /* Escala ligeramente al hacer hover */
+  box-shadow: 0px 0px 10px var(--azul-morado);
+}
+
+.plan li{  
+  text-align: left;
+  list-style-type: none;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS DE SERVICIOS (MEDICAMENTOS Y CITAS) */
+.itemM{
+  border: 1px solid #092c00;
+  padding: 6px;
+  border-radius: 8px;
+  width: 280px;
+  height: 530px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.item p{
+  margin-top: 20px;
+}
+
+.itemM h3{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.itemM img {
+  max-width: 40%;
+  max-height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.itemM:hover{
+  transform: scale(1.003); /* Escala ligeramente al hacer hover */
+  box-shadow: 0px 0px 10px var(--azul-marino);
+}
+
+.itemM li{  
+  text-align: left;
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.compraB {
+  display:grid;
+}
+
+.compraB button{
+  margin-top: 15px;
+  margin-left: 45%;
+  width: 10%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--azul-claro);
+  border: 1px solid var(--azul-morado);
+}
+
+.compraB button:hover {
+  background-color: var(--azul-marino);
+}
+
+.contenedorCit {
+  display: flex;
+  
+}
+
+.anuncio2{
+  display: block;
+  width: 100%;
+}
+.anuncio2 h2 {
+  position: absolute;
+  background-color: var(--blanco);
+  padding: 0 10px;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--negro);
+  border: 1px solid #092c00;
+  border-radius: 8px;
+}
+
+ .textAnun {
+  text-align: center;
+ }
+
+ 
+ .cita-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 35%;
+}
+
+.cita-form label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+.cita-form select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-agendar {
+  background-color: #1094E0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+#resetear {
+  margin-bottom: 10px;
+  }
+  
+.botonC{
+font-size: 13px;
+background-color: rgba(0, 255, 242, 0.89);
+}
